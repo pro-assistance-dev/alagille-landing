@@ -1,7 +1,7 @@
 package patients
 
 import (
-	handler "patro/handlers/patients"
+	handler "alagille-landing/handlers/patients"
 
 	"github.com/gin-gonic/gin"
 )

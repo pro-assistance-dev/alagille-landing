@@ -1,8 +1,8 @@
 package patients
 
 import (
+	"alagille-landing/models"
 	"context"
-	"patro/models"
 
 	"github.com/uptrace/bun"
 )

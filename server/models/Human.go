@@ -13,7 +13,7 @@ type Human struct {
 	ID            uuid.NullUUID `bun:"id,pk,type:uuid,default:uuid_generate_v4()" json:"id" `
 	Name          string        `json:"name"`
 	Surname       string        `json:"surname"`
-	Patronymic    string        `json:"patronymic"`
+	Patronymic    string        `json:"alagille-landingnymic"`
 	DateBirth     *time.Time    `json:"dateBirth"`
 	// Photo   *baseModels.FileInfo `bun:"rel:belongs-to" json:"photo"`
 	// PhotoID uuid.NullUUID        `bun:"type:uuid" json:"photoId"`

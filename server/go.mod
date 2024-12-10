@@ -1,4 +1,4 @@
-module patro
+module alagille-landing
 
 go 1.22.0
 

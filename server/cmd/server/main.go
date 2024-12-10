@@ -1,10 +1,10 @@
 package main
 
 import (
+	"alagille-landing/loggerhelper"
+	"alagille-landing/migrations"
+	"alagille-landing/routing"
 	"log"
-	"patro/loggerhelper"
-	"patro/migrations"
-	"patro/routing"
 
 	"github.com/gin-gonic/gin"
 	_ "github.com/go-pg/pg/v10/orm"

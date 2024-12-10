@@ -1,8 +1,8 @@
 package patients
 
 import (
+	"alagille-landing/models"
 	"net/http"
-	"patro/models"
 
 	"github.com/gin-gonic/gin"
 	baseModels "github.com/pro-assistance-dev/sprob/models"

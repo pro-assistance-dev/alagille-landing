@@ -8,13 +8,7 @@ const StoreModulesNames = [
   // ...Forms,
   // ...Settings,
   // ...Core,
-  'FormsStore',
   'PatientsStore',
-  'RepresentativesStore',
-  'UsersStore',
-  'AnalyzesAcidsStore',
-  'AnalyzesVitaminsStore',
-  'TherapiesStore',
 ];
 
 export default StoreModulesNames;

@@ -1,8 +1,8 @@
 package patients
 
 import (
+	"alagille-landing/models"
 	"context"
-	"patro/models"
 )
 
 func (s *Service) Create(c context.Context, item *models.Patient) error {
