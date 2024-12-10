@@ -1,0 +1,119 @@
+$--color-primary: #2753eb;
+$--color-success: #43d39d;
+
+$--checkbox-border-radius: 50%;
+
+$--input-border-radius: 40px;
+
+@import './elements/table.scss';
+@import './elements/sideMenu.scss';
+@import './elements/filterForm.scss';
+
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+.semi-bold-header {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+// .page-container {
+//   width: 100%;
+//   height: 100%;
+// }
+
+#app {
+  height: 100%;
+}
+
+.collapseHeader {
+  padding-left: 10px;
+}
+
+.form-under-collapse {
+  width: 50%;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.table-under-collapse {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.underline-label {
+  text-decoration: underline;
+}
+
+.el-form-item__content {
+  margin-left: 0;
+}
+
+.el-breadcrumb__inner,
+.el-breadcrumb__item:last-child .el-breadcrumb__inner,
+.el-breadcrumb__item:last-child .el-breadcrumb__inner:hover,
+.el-breadcrumb__item:last-child .el-breadcrumb__inner a,
+.el-breadcrumb__item:last-child .el-breadcrumb__inner a:hover {
+  font-size: 24px;
+  align-items: center;
+  font-weight: bold;
+}
+
+.el-breadcrumb__item:last-child .el-breadcrumb__inner,
+.el-breadcrumb__item:last-child .el-breadcrumb__inner:hover,
+.el-breadcrumb__item:last-child .el-breadcrumb__inner a,
+.el-breadcrumb__item:last-child .el-breadcrumb__inner a:hover {
+  color: #303133;
+}
+
+.el-message-box__btns, .el-popconfirm__action {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.el-message-box__btns .el-button, .el-popconfirm__action .el-button {
+  margin-right: 10px;
+}
+
+.card-button-group .el-button {
+  padding: 5px;
+  margin: 0;
+  min-height: unset;
+  border: none;
+  font-size: 20px;
+}
+
+::-webkit-scrollbar {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: rgba(245, 245, 245, 0.47);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: rgba(85, 85, 85, 0.25);
+}
+
+.el-checkbox__inner {
+  border-radius: 0 !important;
+}
+
+.el-form-item__label {
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}

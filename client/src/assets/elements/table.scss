@@ -1,0 +1,124 @@
+tr.header-style > th {
+  color: #a1a7bd;
+  font-size: 12px;
+  background-color: #eff1f7 !important;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+}
+
+.table-background {
+  background-color: white;
+  background-size: cover;
+  padding: 30px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  position: relative;
+  height: 100%;
+}
+
+.header-top-table {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.table-search {
+  margin-bottom: 20px;
+  border-radius: 40% !important;
+  border-bottom-color: deeppink;
+}
+
+.table-shadow {
+  width: 100%;
+  flex: 1;
+  //overflow-x: scroll !important;
+  box-shadow: 2px 2px 5px grey; /* Параметры тени */
+  border: 1px solid lightgrey;
+  // border-radius: 10px;
+}
+
+.el-table--scrollable-x .el-table__body-wrapper {
+  // height: calc(100vh - 420px);
+  // overflow: scroll;
+}
+
+.table-shadow th {
+  border: none;
+}
+
+.table-shadow td {
+  border-right: none;
+  border-left: none;
+}
+
+.tableHead {
+  font-size: 9px;
+  color: #a1a7bd;
+  background-color: #eff1f7;
+}
+
+.el-table .cell {
+  word-break: break-word;
+}
+
+.icons i {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.icons i:hover {
+  color: #5cb6ff;
+}
+
+.no-hover:hover > td {
+  background-color: initial !important;
+}
+
+.tag-link:hover {
+  background-color: darken(white, 10%);
+  cursor: pointer;
+}
+
+.el-tag {
+  border-radius: 20px;
+  background-color: initial;
+  color: initial;
+}
+
+.el-tag {
+  margin: 2px;
+}
+
+.disability-circles .el-button.is-disabled {
+  cursor: initial;
+}
+
+.disability-circles .el-button--primary {
+  color: black;
+  background-color: initial;
+  border-color: initial;
+}
+
+.disability-circles .el-button--primary:hover {
+  color: initial;
+  background-color: initial;
+  border-color: initial;
+}
+
+.el-input-number__decrease {
+  border-radius: 20px;
+}
+
+.el-input-number__increase {
+  border-radius: 20px;
+}
+
+.el-form-item__content {
+  line-height: 0;
+}
+
+.table-button {
+  padding: 5px;
+  margin: 0;
+  min-height: unset;
+  border: none;
+}

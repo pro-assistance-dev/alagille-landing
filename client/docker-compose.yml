@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  vue:
+    container_name: ankets-client
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /app
+    volumes:
+      - ./:/app
+    ports:
+      - ${VITE_APP_PORT}:${VITE_APP_PORT}
+    stdin_open: true
+    tty: true
+    network_mode: 'host'

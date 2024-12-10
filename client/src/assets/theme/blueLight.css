@@ -1,0 +1,187 @@
+:root[data-theme='blueLight'] {
+  /* background, divider */
+
+  --border-color-default: var(--palette-secondary-base-3);
+
+  --background-color: #f5faff;
+  --background-color-sub: var(--palette-secondary-base-5);
+
+  /* font-color */
+  --font-color: #5f6a99;
+  --font-color-focus: #25293d;
+  --font-secondary-disabled-color: var(--palette-grey-4);
+
+  /* button primary */
+  --button-primary-background: var(--palette-secondary-base);
+  --button-primary-background-hovered: var(--palette-secondary-base-3);
+  --button-primary-background-pressed: var(--palette-secondary-base);
+  --button-primary-background-disabled: var(--palette-grey-3);
+  --button-primary-font-color: var(--palette-white);
+  --button-primary-font-color-hovered: var(--palette-white);
+  --button-primary-font-color-pressed: var(--palette-white);
+  --button-primary-font-color-disabled: var(--palette-grey-5);
+
+  /* button additional */
+  --button-additional-background: var(--palette-secondary-additional);
+  --button-additional-background-hovered: var(--palette-secondary-additional-3);
+  --button-additional-background-pressed: var(--palette-secondary-additional);
+  --button-additional-background-disabled: var(--palette-grey-3);
+  --button-additional-font-color: var(--palette-white);
+  --button-additional-font-color-hovered: var(--palette-white);
+  --button-additional-font-color-pressed: var(--palette-white);
+  --button-additional-font-color-disabled: var(--palette-grey-5);
+
+  /* button information*/
+  --button-info-background: var(--palette-secondary-base);
+  --button-info-background-hovered: var(--palette-secondary-base-3);
+  --button-info-background-pressed: var(--palette-secondary-base);
+  --button-info-background-disabled: var(--palette-grey-3);
+  --button-info-font-color: var(--palette-white);
+  --button-info-font-color-hovered: var(--palette-white);
+  --button-info-font-color-pressed: var(--palette-white);
+  --button-info-font-color-disabled: var(--palette-grey-5);
+
+  /* button success*/
+  --button-success-background: var(--palette-success);
+  --button-success-background-hovered: var(--palette-success-3);
+  --button-success-background-pressed: var(--palette-success);
+  --button-success-background-disabled: var(--palette-grey-3);
+  --button-success-font-color: var(--palette-white);
+  --button-success-font-color-hovered: var(--palette-white);
+  --button-success-font-color-pressed: var(--palette-white);
+  --button-success-font-color-disabled: var(--palette-grey-5);
+
+  /* button warning*/
+  --button-warning-background: var(--palette-warning);
+  --button-warning-background-hovered: var(--palette-warning-3);
+  --button-warning-background-pressed: var(--palette-warning);
+  --button-warning-background-disabled: var(--palette-grey-3);
+  --button-warning-font-color: var(--palette-white);
+  --button-warning-font-color-hovered: var(--palette-white);
+  --button-warning-font-color-pressed: var(--palette-white);
+  --button-warning-font-color-disabled: var(--palette-grey-5);
+
+  /* button error*/
+  --button-error-background: var(--palette-error);
+  --button-error-background-hovered: var(--palette-error-3);
+  --button-error-background-pressed: var(--palette-error);
+  --button-error-background-disabled: var(--palette-grey-3);
+  --button-error-font-color: var(--palette-white);
+  --button-error-font-color-hovered: var(--palette-white);
+  --button-error-font-color-pressed: var(--palette-white);
+  --button-error-font-color-disabled: var(--palette-grey-5);
+
+  /* button neutral*/
+  --button-neutral-background: var(--palette-grey-5);
+  --button-neutral-background-hovered: var(--palette-grey-4);
+  --button-neutral-background-pressed: var(--palette-grey-5);
+  --button-neutral-background-disabled: var(--palette-grey-3);
+  --button-neutral-font-color: var(--palette-white);
+  --button-neutral-font-color-hovered: var(--palette-white);
+  --button-neutral-font-color-pressed: var(--palette-white);
+  --button-neutral-font-color-disabled: var(--palette-grey-5);
+
+  /* button pag*/
+  --button-pagination-background: var(--palette-secondary-base-5);
+  --button-pagination-background-hovered: var(--palette-secondary-base-5);
+  --button-pagination-background-pressed: var(--palette-secondary-base);
+  --button-pagination-background-disabled: var(--palette-secondary-base-5);
+  --button-pagination-font-color: var(--palette-secondary-base-1);
+  --button-pagination-font-color-hovered: var(--palette-secondary-base-1);
+  --button-pagination-font-color-pressed: var(--palette-white);
+  --button-pagination-font-color-disabled: var(--palette-secondary-base-5);
+
+  /* input */
+
+  --input-background: var(--background-color);
+  --input-label-color: var(--palette-secondary-base-4);
+  --input-placeholder-color: var(--font-color);
+  --input-readonly-background: var(--palette-neutral-30);
+  --input-border-color: var(--background-color);
+  --input-focus-color: var(--font-color-focus);
+  --input-font-color: var(--font-color);
+
+  /* checkbox */
+
+  --checkbox-label-color: var(--palette-secondary-base-2);
+  --checkbox-border-color: var(--border-color-default);
+  --checkbox-border-color-hovered: var(--palette-secondary-base);
+
+  /* list */
+  --list-font-color: var(--palette-grey-7);
+  --list-background-color-hovered: var(--palette-grey-2);
+  --list-font-color-pressed: var(--palette-grey-9);
+
+  /* tabs */
+
+  --tabs-background: var(--palette-secondary-base);
+  --tabs-font-color: var(--palette-white);
+  --tabs-border-color: var(--border-color-default);
+  --tabs-background-selected: var(--palette-secondary-base-4);
+  --tabs-selected-font-color: var(--palette-white);
+  --tabs-selected-border-color: var(--border-color-default);
+
+  --tabs-hover-background-color: var(--palette-secondary-base-4);
+
+  --menu-font-color: #5f6a99;
+  --menu-font-color-hovered: #5f6a99;
+  --menu-font-color-pressed: #5f6a99;
+  --submenu-font-color: #5f6a99;
+  --submenu-font-color-hovered: #5f6a99;
+  --submenu-font-color-pressed: #5f6a99;
+  --menu-background: var(--palette-white);
+  --menu-background-hovered: var(--palette-white);
+  --menu-background-pressed: var(--palette-white);
+  --submenu-background: var(--palette-white);
+  --submenu-background-hovered: var(--palette-white);
+  --submenu-background-pressed: var(--palette-white);
+  --menu-border-color: var(--border-color-default);
+
+  --left-slider-background: var(--palette-white);
+  --right-slider-background: var(--palette-secondary-base-5);
+
+  --right-slider-click-line-background: var(--palette-secondary-base-3);
+  --right-slider-click-line-font-color: var(--palette-white);
+  --right-slider-click-line-background-hovered: var(--palette-secondary-base-4);
+  --right-slider-click-line-font-color-hovered: var(--palette-white);
+  --right-slider-click-line-border-color: var(--border-color-default);
+
+  --left-slider-click-line-background: var(--palette-secondary-base);
+  --left-slider-click-line-font-color: var(--palette-white);
+  --left-slider-click-line-background-hovered: var(--palette-secondary-base-3);
+  --left-slider-click-line-font-color-hovered: var(--palette-white);
+  --left-slider-click-line-border-color: var(--palette-secondary-base);
+
+  --admin-header-background-color: var(--background-color);
+  --admin-header-font-color: var(--palette-white);
+
+  --badge-secondary-font-color: var(--palette-grey-1);
+  --badge-secondary-background-color: var(--palette-grey-4);
+
+  --collaps-item-shadow-color: var(--palette-secondary-base);
+
+  /* modal window */
+  --modal-window-background-color: var(--palette-white);
+  --modal-divider-color: #e3e7fb;
+
+  /* progress bar */
+  --progress-bar-color: var(--palette-warning);
+  --progress-bar-full-color: var(--palette-success);
+
+  /* notification message */
+
+  --notification-message-primary-background-color: var(--palette-primary-base-5);
+  --notification-message-success-background-color: var(--palette-success-5);
+  --notification-message-warning-background-color: var(--palette-warning-5);
+  --notification-message-error-background-color: var(--palette-error-5);
+
+  --notification-message-primary-border-color: var(--palette-primary-base);
+  --notification-message-success-border-color: var(--palette-success);
+  --notification-message-warning-border-color: var(--palette-warning);
+  --notification-message-error-border-color: var(--palette-error);
+
+  --notification-message-primary-font-color: var(--palette-primary-base-2);
+  --notification-message-success-font-color: var(--palette-success-2);
+  --notification-message-warning-font-color: var(--palette-warning-2);
+  --notification-message-error-font-color: var(--palette-error-2);
+}
