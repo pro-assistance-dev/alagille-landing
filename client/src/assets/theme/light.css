@@ -1,7 +1,8 @@
 :root[data-theme='light'] {
   /* background, divider */
 
-  --border-color-default: var(--palette-secondary-base-3);
+  /* --border-color-default: #e9f1f4; */
+  --border-color-default: #118299;
 
   --background-color: var(--palette-white);
   --background-color-sub: var(--palette-secondary-base-5);

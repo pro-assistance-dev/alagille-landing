@@ -1,4 +1,4 @@
-:root[data-brandbook='ankets'] {
+:root[data-brandbook='alagille'] {
   --palette-white: #ffffff;
   --palette-black: #000000;
 
@@ -217,7 +217,7 @@
   --typography-font-size-3xl: 1.375rem;
   --typography-font-size-4xl: 1.5rem;
 
-  --base-font: 'Gilroy', Roboto, Helvetica, sans-serif;
+  --base-font: 'Montserrat', Roboto, Helvetica, sans-serif;
   --font-size-default: var(--typography-font-size-s);
 
   --input-padding: 10px 20px;

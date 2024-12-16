@@ -1,0 +1,63 @@
+<template>
+  <svg
+    class="icon"
+    :class="iconClass"
+    :style="{
+      margin: margin,
+      width: size,
+      height: size,
+    }"
+  >
+    <use xlink:href="#CardArrowRight"></use>
+  </svg>
+
+  <svg width="0" height="0" class="hidden">
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" id="CardArrowRight">
+      <path
+        d="M47.0654 8.36146C47.9005 7.30258 47.724 5.75786 46.6007 5.01159C40.9854 1.28088 34.2528 -0.463181 27.4876 0.105391C19.9082 0.742384 12.8538 4.23454 7.75145 9.87534C2.64913 15.5161 -0.120108 22.8844 0.00399352 30.4895C0.128095 38.0945 3.13627 45.3686 8.41992 50.8399C13.7036 56.3112 20.8682 59.5713 28.4643 59.9607C36.0604 60.35 43.5208 57.8395 49.3362 52.9371C55.1516 48.0347 58.8877 41.1064 59.7888 33.5539C60.593 26.8126 59.0849 20.0233 55.5524 14.2812C54.8457 13.1326 53.3081 12.9023 52.2208 13.6999V13.6999C51.1334 14.4975 50.91 16.0205 51.5984 17.1801C54.4085 21.9143 55.5971 27.464 54.9396 32.9754C54.1852 39.2984 51.0572 45.0989 46.1885 49.2033C41.3198 53.3077 35.0738 55.4095 28.7143 55.0835C22.3547 54.7575 16.3564 52.0281 11.9329 47.4474C7.50931 42.8668 4.99082 36.7769 4.88692 30.4098C4.78302 24.0427 7.10147 17.8739 11.3732 13.1514C15.6449 8.4288 21.551 5.50511 27.8965 4.97181C33.4275 4.50698 38.9323 5.88844 43.5656 8.86206C44.7005 9.59046 46.2303 9.42035 47.0654 8.36146V8.36146Z"
+        fill="currentColor"
+      ></path>
+      <rect
+        x="22.4727"
+        y="42.5195"
+        width="21.6923"
+        height="5.37842"
+        rx="2.68921"
+        transform="rotate(-45.2976 22.4727 42.5195)"
+        fill="currentColor"
+      ></rect>
+      <rect
+        x="34.6172"
+        y="33.668"
+        width="7.21825"
+        height="5.8725"
+        rx="2.93625"
+        transform="rotate(-89.7335 34.6172 33.668)"
+        fill="currentColor"
+      ></rect>
+      <rect
+        x="26.3164"
+        y="13.6211"
+        width="21.6923"
+        height="5.37842"
+        rx="2.68921"
+        transform="rotate(45.4654 26.3164 13.6211)"
+        fill="currentColor"
+      ></rect>
+    </symbol>
+  </svg>
+</template>
+
+<script lang="ts" setup>
+defineProps({
+  size: { type: String as PropType<string>, default: '46px' },
+  margin: { type: String as PropType<string>, default: '0' },
+  iconClass: { type: String as PropType<string>, required: false, default: '' },
+});
+</script>
+
+<style scoped>
+.hidden {
+  display: none;
+}
+</style>
