@@ -91,6 +91,7 @@ const url = new URL('@/assets/mainimg/2/1.png', import.meta.url).href;
   border: 1px solid #0099b8;
   box-sizing: border-box;
   padding: 30px;
+  background: #ffffff;
 }
 .card-img-bg {
   position: relative;
