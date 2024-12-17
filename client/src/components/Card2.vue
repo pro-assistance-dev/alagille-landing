@@ -34,7 +34,7 @@ const props = defineProps({
   title: { type: String, default: '' },
   text: { type: String, default: 'Text' },
   margin: { type: String, default: '20px auto 0 auto' },
-  background: { type: String, default: '#ffffff' },
+  background: { type: String, default: '#e9f1f4' },
 });
 </script>
 <style scoped>
@@ -52,6 +52,7 @@ const props = defineProps({
   border: 1px solid #0099b8;
   box-sizing: border-box;
   padding: 10px 0 10px 40px;
+  background: #ffffff;
 }
 
 .list-icon {
