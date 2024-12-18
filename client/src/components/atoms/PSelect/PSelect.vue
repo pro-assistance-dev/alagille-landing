@@ -27,7 +27,7 @@
 </template>
 
 <script setup lang="ts">
-import IconClose from '@/components/Icons/IconClose.vue';
+// import IconClose from '@/components/Icons/IconClose.vue';
 
 const model: Ref<unknown> = defineModel<unknown>();
 const ph: Ref<boolean> = ref(true);
