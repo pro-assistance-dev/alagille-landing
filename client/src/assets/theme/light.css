@@ -1,16 +1,14 @@
 :root[data-theme='light'] {
   /* background, divider */
 
-  /* --border-color-default: #e9f1f4; */
-  --border-color-default: #118299;
+  --border-color-default: var(--palette-secondary-base-3);
 
-  --background-color: var(--palette-white);
+  --background-color: #f5faff;
   --background-color-sub: var(--palette-secondary-base-5);
 
   /* font-color */
-  --font-color: var(--palette-secondary-base-1);
-  --font-color-hovered: var(--palette-secondary-base);
-  --font-color-focus: var(--palette-secondary-base-2);
+  --font-color: #0099b8;
+  --font-color-focus: #017389;
   --font-secondary-disabled-color: var(--palette-grey-4);
 
   /* button primary */
@@ -83,19 +81,29 @@
   --button-neutral-font-color-pressed: var(--palette-white);
   --button-neutral-font-color-disabled: var(--palette-grey-5);
 
+  /* button pag*/
+  --button-pagination-background: var(--palette-secondary-base-5);
+  --button-pagination-background-hovered: var(--palette-secondary-base-5);
+  --button-pagination-background-pressed: var(--palette-secondary-base);
+  --button-pagination-background-disabled: var(--palette-secondary-base-5);
+  --button-pagination-font-color: var(--palette-secondary-base-1);
+  --button-pagination-font-color-hovered: var(--palette-secondary-base-1);
+  --button-pagination-font-color-pressed: var(--palette-white);
+  --button-pagination-font-color-disabled: var(--palette-secondary-base-5);
+
   /* input */
 
-  --input-background: var(--palette-white);
+  --input-background: var(--background-color);
   --input-label-color: var(--palette-secondary-base-4);
-  --input-placeholder-color: var(--palette-grey-5);
+  --input-placeholder-color: var(--font-color);
   --input-readonly-background: var(--palette-neutral-30);
-  --input-border-color: var(--border-color-default);
+  --input-border-color: var(--background-color);
   --input-focus-color: var(--font-color-focus);
   --input-font-color: var(--font-color);
 
   /* checkbox */
 
-  --checkbox-label-color: var(--palette-secondary-base-4);
+  --checkbox-label-color: var(--palette-secondary-base-2);
   --checkbox-border-color: var(--border-color-default);
   --checkbox-border-color-hovered: var(--palette-secondary-base);
 
@@ -115,21 +123,21 @@
 
   --tabs-hover-background-color: var(--palette-secondary-base-4);
 
-  --menu-font-color: var(--palette-secondary-base-1);
-  --menu-font-color-hovered: var(--palette-secondary-base);
-  --menu-font-color-pressed: var(--palette-secondary-base);
-  --submenu-font-color: var(--palette-secondary-base-1);
-  --submenu-font-color-hovered: var(--palette-secondary-base);
-  --submenu-font-color-pressed: var(--palette-secondary-base);
-  --menu-background: var(--palette-secondary-base-5);
-  --menu-background-hovered: var(--palette-secondary-base-5);
-  --menu-background-pressed: var(--palette-secondary-base-5);
-  --submenu-background: var(--palette-secondary-base-5);
-  --submenu-background-hovered: var(--palette-secondary-base-5);
-  --submenu-background-pressed: var(--palette-secondary-base-5);
+  --menu-font-color: #5f6a99;
+  --menu-font-color-hovered: #5f6a99;
+  --menu-font-color-pressed: #5f6a99;
+  --submenu-font-color: #5f6a99;
+  --submenu-font-color-hovered: #5f6a99;
+  --submenu-font-color-pressed: #5f6a99;
+  --menu-background: var(--palette-white);
+  --menu-background-hovered: var(--palette-white);
+  --menu-background-pressed: var(--palette-white);
+  --submenu-background: var(--palette-white);
+  --submenu-background-hovered: var(--palette-white);
+  --submenu-background-pressed: var(--palette-white);
   --menu-border-color: var(--border-color-default);
 
-  --left-slider-background: var(--palette-secondary-base-5);
+  --left-slider-background: var(--palette-white);
   --right-slider-background: var(--palette-secondary-base-5);
 
   --right-slider-click-line-background: var(--palette-secondary-base-3);
@@ -144,9 +152,36 @@
   --left-slider-click-line-font-color-hovered: var(--palette-white);
   --left-slider-click-line-border-color: var(--palette-secondary-base);
 
-  --admin-header-background-color: var(--palette-secondary-base-4);
+  --admin-header-background-color: var(--background-color);
   --admin-header-font-color: var(--palette-white);
 
   --badge-secondary-font-color: var(--palette-grey-1);
   --badge-secondary-background-color: var(--palette-grey-4);
+
+  --collaps-item-shadow-color: var(--palette-secondary-base);
+
+  /* modal window */
+  --modal-window-background-color: var(--palette-white);
+  --modal-divider-color: #e3e7fb;
+
+  /* progress bar */
+  --progress-bar-color: var(--palette-warning);
+  --progress-bar-full-color: var(--palette-success);
+
+  /* notification message */
+
+  --notification-message-primary-background-color: var(--palette-primary-base-5);
+  --notification-message-success-background-color: var(--palette-success-5);
+  --notification-message-warning-background-color: var(--palette-warning-5);
+  --notification-message-error-background-color: var(--palette-error-5);
+
+  --notification-message-primary-border-color: var(--palette-primary-base);
+  --notification-message-success-border-color: var(--palette-success);
+  --notification-message-warning-border-color: var(--palette-warning);
+  --notification-message-error-border-color: var(--palette-error);
+
+  --notification-message-primary-font-color: var(--palette-primary-base-2);
+  --notification-message-success-font-color: var(--palette-success-2);
+  --notification-message-warning-font-color: var(--palette-warning-2);
+  --notification-message-error-font-color: var(--palette-error-2);
 }

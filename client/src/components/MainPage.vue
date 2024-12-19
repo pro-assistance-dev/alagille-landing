@@ -1,8 +1,10 @@
 <template>
   <div class="scroll">
-    <!-- <PSticky :z-index="2" :shadow="true">
-      <PFlex background="#0099B8" max-width="1280px" margin="0 auto" height="40px"></PFlex>
-    </PSticky> -->
+    <PSticky :z-index="2" :shadow="true">
+      <PFlex background="#0099B8" max-width="1280px" margin="0 auto" height="40px" justify-content="right">
+        <MainButton text="Зарегистрироваться в программе" @click="showAddModal = true" />
+      </PFlex>
+    </PSticky>
     <Header />
     <ContentBlock1 />
     <ContentBlock2 />
@@ -36,6 +38,9 @@
       <img :src="main16" />
     </div>
   </div>
+  <PModal v-if="showAddModal" :show="showAddModal" :closable="true" @close="toggleAddModal" width="1000px" top="5vh">
+    <FormRegistration @create="toggleAddModal" />
+  </PModal>
 </template>
 <script lang="ts" setup>
 import main4 from '@/assets/mainimg/main4.png';
@@ -51,6 +56,11 @@ import main13 from '@/assets/mainimg/main13.png';
 import main14 from '@/assets/mainimg/main14.png';
 import main15 from '@/assets/mainimg/main15.png';
 import main16 from '@/assets/mainimg/main16.png';
+
+const showAddModal: Ref<boolean> = ref(false);
+const toggleAddModal = (): void => {
+  showAddModal.value = !showAddModal.value;
+};
 </script>
 <style scoped>
 .scroll {
@@ -63,7 +73,7 @@ import main16 from '@/assets/mainimg/main16.png';
   max-width: 1300px;
   width: calc(100% - 20px);
   margin: 0 auto;
-  padding: 10px;
+  padding: 0 10px;
 }
 .scroll {
   overflow: auto;
@@ -87,5 +97,25 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.main-button {
+  background: #ffffff;
+  color: #0099b8;
+  width: auto;
+  height: auto;
+  padding: 6px 20px 5px 20px;
+  border: 1px solid #ffffff;
+  border-radius: 100px;
+  margin: 0 20px;
+}
+
+.main-button:hover {
+  background: #e9f1f4;
+  border-color: #e9f1f4;
+}
+.main-button:active {
+  background: #0099b8;
+  color: #ffffff;
 }
 </style>

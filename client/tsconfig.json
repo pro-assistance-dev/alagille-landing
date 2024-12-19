@@ -16,9 +16,16 @@
     "sourceMap": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": [
+        "src/*"
+      ]
     },
-    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ]
   },
   "include": [
     "src/**/*.ts",
@@ -30,9 +37,16 @@
     "src/components",
     "src/custom.d.ts",
     "src/vue3-emoji-picker.d.ts",
-    "src/index.d.ts"
+    "src/index.d.ts",
+    "src/services/atoms"
   ],
-  "files": ["./auto-imports.d.ts"],
-  "exclude": ["node_modules"],
-  "types": ["vitest/globals"]
+  "files": [
+    "./auto-imports.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "types": [
+    "vitest/globals"
+  ]
 }
