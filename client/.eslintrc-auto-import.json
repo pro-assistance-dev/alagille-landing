@@ -179,6 +179,15 @@
     "BaseStore": true,
     "FileInfo": true,
     "Human": true,
-    "Static": true
+    "Static": true,
+    "AuthButtonLogin": true,
+    "AuthButtonRegister": true,
+    "AuthFormSettings": true,
+    "AuthFormSettingsType": true,
+    "AuthFormStatuses": true,
+    "EmailField": true,
+    "LoginField": true,
+    "PasswordField": true,
+    "PasswordRepeatField": true
   }
 }

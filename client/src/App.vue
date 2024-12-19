@@ -41,7 +41,6 @@ const changeDocumentTitle = () => {
 };
 
 onBeforeMount(async (): Promise<void> => {
-  PHelp.Auth.Actualize();
   changeDocumentTitle();
   const t = localStorage.getItem('colorTheme');
   if (t) {

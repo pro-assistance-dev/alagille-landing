@@ -8,6 +8,7 @@ import '@/assets/index.css';
 
 import App from '@/App.vue';
 import router from '@/router/index';
+import Setup from './setup';
 
 const app = createApp(App);
 app.use(router);
@@ -27,19 +28,7 @@ app.directive('click-outside', {
   },
 });
 
-const baseUrl = import.meta.env.VITE_APP_BASE_URL ?? '';
-const apiVersion = import.meta.env.VITE_APP_API_V1 ?? '';
-const apiHost = import.meta.env.VITE_APP_API_HOST ?? '';
-
-HttpClient.Setup(baseUrl, apiVersion, apiHost);
-
-const staticUrl = import.meta.env.VITE_APP_STATIC_URL;
-Static.Setup(staticUrl);
-
-import { servicesComponents } from 'sprof';
-servicesComponents.install(app);
-
-Router.SetRouter(router);
+Setup(app, router);
 
 router.isReady().then(() => {
   app.mount('#app');
