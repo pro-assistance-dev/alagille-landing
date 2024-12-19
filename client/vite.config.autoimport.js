@@ -1,5 +1,6 @@
 import { classesNames, servicesNames, servicesStoresNames } from 'sprof';
 
+import stores from './src/store/indexNames';
 export default {
   include: [
     '.ts',
@@ -17,11 +18,20 @@ export default {
     },
     {
       from: 'sprof',
+      imports: servicesNames,
+    },
+    {
+      from: 'sprof',
       imports: classesNames,
     },
     {
       from: 'sprof',
       imports: servicesStoresNames,
+    },
+    {
+      from: '@/store/index',
+      imports: stores,
+      // type: true,
     },
   ],
   types: true,

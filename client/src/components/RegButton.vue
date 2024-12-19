@@ -6,12 +6,14 @@
       margin: margin,
       padding: padding,
     }"
+    @click.prevent="emit('click')"
   >
     {{ text }}
   </button>
 </template>
 <script lang="ts" setup>
-const props = defineProps({
+const emit = defineEmits(['click']);
+defineProps({
   text: { type: String, default: 'button' },
   margin: { type: String, default: ' 40px 20px 0 20px' },
   padding: { type: String, default: '7px 20px 6px 20px' },

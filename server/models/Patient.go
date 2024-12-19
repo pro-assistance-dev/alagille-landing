@@ -6,6 +6,7 @@ import (
 	"github.com/uptrace/bun"
 
 	"github.com/google/uuid"
+	basemodels "github.com/pro-assistance-dev/sprob/models"
 )
 
 type Patient struct {
@@ -22,6 +23,15 @@ type Patient struct {
 	HowDoYouKnow      string        `json:"howDoYouKnow"`
 	EditNameMode      bool          `json:"editNameMode"`
 
+	IsRussian bool   `json:"isRussian"`
+	Region    string `json:"region"`
+	Diagnosis string `json:"diagnosis"`
+	Drug      string `json:"drug"`
+
+	IllHistory   *basemodels.FileInfo `bun:"rel:belongs-to" json:"illHistory"`
+	IllHistoryID uuid.NullUUID        `bun:"type:uuid"  json:"illHistoryId"`
+	Accept       *basemodels.FileInfo `bun:"rel:belongs-to" json:"accept"`
+	AcceptID     uuid.NullUUID        `bun:"type:uuid"  json:"acceptId"`
 	// UserAccountID uuid.NullUUID           `bun:"type:uuid" json:"userAccountId"`
 	// UserAccount   *baseModels.UserAccount `bun:"rel:belongs-to" json:"userAccount"`
 }

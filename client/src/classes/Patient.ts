@@ -1,3 +1,5 @@
+import { FileInfo } from 'sprof';
+
 export default class Patient {
   id?: string;
   email = '';
@@ -10,6 +12,13 @@ export default class Patient {
   fioRepresentative = '';
   howDoYouKnow = '';
   editNameMode = false;
+  isRussian = false;
+  region = '';
+  city = '';
+  diagnosis = '';
+  drug = '';
+  illHistory: FileInfo = new FileInfo();
+  accept: FileInfo = new FileInfo();
 
   constructor(i?: Patient) {
     ClassHelper.BuildClass(this, i);

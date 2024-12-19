@@ -20,8 +20,17 @@
   </GridContainer>
   <PInput v-model="patient.fioRepresentative" label="ФИО законного представителя" />
   <PInput v-model="patient.howDoYouKnow" label="Откуда Вы узнали о программе" />
+  <!-- <PCheckBox v-model="patient.isRussion" label="Гражданство пациента - РФ" /> -->
+  <!-- <PInput v-model="patient.region" label="Регион проживания пациента" /> -->
+  <!-- <PInput v-model="patient.city" label="Город проживания пациента" /> -->
+  <!-- <PInput v-model="patient.diagnosis" label="Диагноз" /> -->
+  <!-- <PInput v-model="patient.drug" label="Назначенный препарат" /> -->
+
+  <!-- <UploaderFile v-model="patient.illHistory" label="Загрузите документ" /> -->
+  <!-- <UploaderFile v-model="patient.accept" label="Информированное согласие" /> -->
+
   <PFlex max-width="1280px" margin="0 auto" justify-content="center">
-    <RegButton text="Зарегистрироваться" />
+    <RegButton text="Отправить" @click="create" />
   </PFlex>
 </template>
 <script lang="ts" setup>
@@ -31,11 +40,7 @@ const emit = defineEmits(['create']);
 const patient: Patient = Patient.Create();
 
 const create = async () => {
-  // await HumansStore.Create(patient.human);
-  // await RepresentativesStore.Create(patient.representative);
-  // await HumansStore.Create(patient.representative.human);
-  // await PatientsStore.Create(patient);
-  // PatientsStore.AppendToAll([patient]);
+  await PatientsStore.Create();
   emit('create');
 };
 </script>

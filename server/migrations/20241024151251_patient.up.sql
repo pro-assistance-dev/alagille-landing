@@ -10,5 +10,5 @@ create table if not exists patients (
 	phone varchar NULL,
 	fio_representative varchar NULL,
 	how_do_you_know varchar NULL,
-	edit_name_mode varchar NULL,
+	edit_name_mode varchar NULL
 );
