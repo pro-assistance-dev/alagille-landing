@@ -19,9 +19,9 @@
 </template>
 
 <script setup lang="ts">
-import Strings from '@/services/Strings';
-import { Sizes } from '@/types/Sizes';
-import { Statuses } from '@/types/Statuses';
+// import Strings from '@/services/Strings';
+// import { Sizes } from '@/types/Sizes';
+// import { Statuses } from '@/types/Statuses';
 
 defineOptions({ inheritAttrs: false });
 
