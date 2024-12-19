@@ -26,8 +26,6 @@
 </template>
 <script lang="ts" setup>
 import Patient from '@/classes/Patient';
-import GridContainer from './GridContainer.vue';
-import PSelect from '@/services/atoms/PSelect/PSelect.vue';
 
 const emit = defineEmits(['create']);
 const patient: Patient = Patient.Create();
