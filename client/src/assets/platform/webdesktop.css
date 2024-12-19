@@ -65,7 +65,7 @@
   --admin-header-height: var(--size-general-12x);
 
   /* modal window */
-  --modal-window-padding: 60px 100px;
+  --modal-window-padding: 60px;
 
   /* notification message */
   --notification-font-size: var(--font-size-l);

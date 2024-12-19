@@ -154,7 +154,7 @@ option {
   position: absolute;
   top: calc(50%);
   transform: translateY(-50%);
-  right: 10px;
+  right: 0px;
   z-index: 10;
   display: flex;
   justify-content: center;
@@ -169,7 +169,7 @@ option {
   position: absolute;
   top: calc(50%);
   transform: translateY(-50%);
-  right: 10px;
+  right: 0px;
   z-index: 9;
   display: flex;
   justify-content: center;
@@ -184,7 +184,8 @@ select {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  /* -webkit-appearance: none; */
-  /* -moz-appearance: none; */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 </style>
