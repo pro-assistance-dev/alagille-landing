@@ -33,7 +33,7 @@ defineProps({
 });
 </script>
 
-<style  scoped>
+<style scoped>
 .admin-list-wrapper {
   position: relative;
   display: flex;
@@ -43,14 +43,13 @@ defineProps({
   box-sizing: border-box;
   font-family: var(--base-font);
   font-size: var(--font-size-default);
-
-  &-content {
-    overflow: hidden;
-    overflow-y: auto;
-    box-sizing: border-box;
-    height: 100%;
-    margin: 0 10px;
-  }
+}
+.admin-list-wrapper-content {
+  overflow: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0 10px;
 }
 
 .pagination {

@@ -25,8 +25,7 @@
   <!-- <PInput v-model="patient.city" label="Город проживания пациента" /> -->
   <!-- <PInput v-model="patient.diagnosis" label="Диагноз" /> -->
   <!-- <PInput v-model="patient.drug" label="Назначенный препарат" /> -->
-
-  <UploaderFile :file-info="patient.illHistory" label="История болезни" />
+  <UploaderFile :file-info="patient.illHistory" label="История болезни" @upload="upload" />
   <UploaderFile :file-info="patient.accept" label="Информированное согласие" />
 
   <PFlex max-width="1280px" margin="0 auto" justify-content="center">
@@ -34,10 +33,14 @@
   </PFlex>
 </template>
 <script lang="ts" setup>
-import Patient from '@/classes/Patient';
+import { nextTick } from 'vue';
 
 const emit = defineEmits(['create']);
-const patient: Patient = Patient.Create();
+const patient = PatientsStore.Item();
+const upload = (e: FileInfo) => {
+  nextTick();
+  patient.illHistory = e;
+};
 
 const create = async () => {
   await PatientsStore.Create();

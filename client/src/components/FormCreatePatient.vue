@@ -28,16 +28,15 @@ const create = async () => {
   border-radius: 5px;
   color: #006bb4;
   font-size: 12px;
-
-  &-filter {
-    background: #ffffff;
-  }
-
-  &-download {
-    background: #dff2f8;
-  }
 }
 
+.button-filter {
+  background: #ffffff;
+}
+
+.button-download {
+  background: #dff2f8;
+}
 :deep(.button-register) {
   width: auto;
   height: 34px;
@@ -122,10 +121,10 @@ const create = async () => {
   font-size: 14px;
   padding: 0;
   margin: 0 5px 0 0;
+}
 
-  &-active {
-    color: #b0a4c0;
-  }
+.edv-active {
+  color: #b0a4c0;
 }
 
 .patient-name {
