@@ -24,7 +24,7 @@
     "math-expression-evaluator": "^2.0.5",
     "reflect-metadata": "^0.2.2",
     "sortablejs": "^1.15.2",
-    "sprof": "file:sprof-0.0.2.tgz",
+    "sprof": "^0.0.13",
     "storybook-addon-root-attributes": "^2.1.3",
     "tslib": "^2.6.2",
     "uuid": "^9.0.1",
