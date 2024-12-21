@@ -1,5 +1,5 @@
 ALTER TABLE patients
-  ADD COLUMN is_russion bool, 
+  ADD COLUMN is_russian bool, 
   add column region varchar,
   add column city varchar,
   add column diagnosis varchar,
